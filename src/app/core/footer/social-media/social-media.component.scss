@@ -1,0 +1,17 @@
+.social-media-container {
+    width: auto;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+    a>svg {
+        fill: var(--white);
+        height: 25px;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+            fill: var(--gray);
+        }
+    }
+}
