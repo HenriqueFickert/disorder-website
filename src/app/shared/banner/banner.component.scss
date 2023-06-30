@@ -1,8 +1,19 @@
+@import "../../scss/global.scss";
+
 .banner-container {
     position: relative;
-    // clip-path: polygon(18% 98%, 0 100%, 0 1%, 100% 0, 100% 100%, 84% 98%, 71% 94%, 53% 95%, 39% 93%, 27% 95%);
+    // background-color: var(--black-light);
+
+    background-image: url("/assets/img/banners/banner-4.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    height: 500px;
 
     &__background {
+
         width: 100%;
         height: auto;
         filter: brightness(0.6);
@@ -15,21 +26,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         transform: translate(-50%, -50%);
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
 
         &__img {
             width: 80%;
+            max-width: 500px;
         }
 
         &__subtitle {
             margin: 30px;
             color: var(--white);
-            font-family: 'Roboto';
-            font-size: 20px;
+            font-family: 'AmaticSC-Regular';
+            font-size: 35px;
             font-weight: 100;
             letter-spacing: 1px;
             text-align: center;
@@ -39,9 +50,9 @@
             width: 50%;
             font-size: 25px;
             letter-spacing: 1px;
-            height: 55px;
+            height: 45px;
             border-radius: 0px 10px 0px 10px;
-            font-family: 'Roboto';
+            font-family: 'OpenSans-Regular';
         }
     }
 
@@ -52,12 +63,45 @@
         background-size: 50px 100%;
         animation: skeleton 1.5s infinite;
         min-width: 100%;
-        min-height: 400px;
+        min-height: 350px;
     }
 }
 
 @keyframes skeleton {
     to {
         background-position: 120% 0;
+    }
+}
+
+@media #{$mobile} {
+    .banner-container {
+        &__title-container {
+            &__subtitle {
+                font-size: 25px;
+            }
+
+            button {
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media #{$pcfullhd} {
+    .banner-container {
+        &__title-container {
+            margin-top: 10px;
+
+            &__subtitle {
+                font-size: 55px;
+                margin: 50px;
+            }
+
+            button {
+                width: 40%;
+                font-size: 35px;
+            }
+        }
     }
 }

@@ -1,5 +1,27 @@
 .navbar {
     background-color: var(--black-light);
+    justify-content: space-between;
+
+    &__menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 15px;
+
+        li {
+            margin: 8px;
+            font-family: "AmaticSC-Bold";
+            letter-spacing: 1px;
+            font-size: 18px;
+            color: var(--white);
+            cursor: pointer;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
 
     app-disorder-nav-logo {
         margin-left: 15px;
