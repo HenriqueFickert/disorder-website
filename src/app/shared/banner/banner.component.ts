@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  public isLoaded: boolean = false;
-
-  onLoaded() {
-    this.isLoaded = true;
-  }
 }

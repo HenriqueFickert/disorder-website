@@ -1,10 +1,10 @@
 $minmobile: "(max-width: 370px)";
-$xsmobile: "(max-width: 399px)";
-$smobile: "(max-width: 615px)";
-$mobile: "(max-width: 767px)";
+$xsmobile: "(min-width: 399px)";
+$smobile: "(min-width: 615px)";
+$mobile: "(min-width: 767px)";
 
-$xtablet: "(max-width: 992px)";
-$tablet: "(max-width: 1200px)";
+$xtablet: "(min-width: 992px)";
+$tablet: "(min-width: 1200px)";
 
 $pcfullhd: "(min-width: 1920px)";
 $pcquadhd: "(min-width: 2560px)";

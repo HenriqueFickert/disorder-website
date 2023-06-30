@@ -1,35 +1,23 @@
 @import "../../scss/global.scss";
 
 .banner-container {
-    position: relative;
-    // background-color: var(--black-light);
-
     background-image: url("/assets/img/banners/banner-4.png");
-
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
-
-    height: 500px;
-
-    &__background {
-
-        width: 100%;
-        height: auto;
-        filter: brightness(0.6);
-        // filter: grayscale(100%);
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__title-container {
-        width: 70%;
+        backdrop-filter: brightness(60%);
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        top: 50%;
-        left: 50%;
 
         &__img {
             width: 80%;
@@ -37,44 +25,30 @@
         }
 
         &__subtitle {
-            margin: 30px;
-            color: var(--white);
             font-family: 'AmaticSC-Regular';
-            font-size: 35px;
-            font-weight: 100;
+            color: var(--white);
             letter-spacing: 1px;
             text-align: center;
+            font-weight: 100;
+            font-size: 35px;
+            margin: 30px;
         }
 
         button {
-            width: 50%;
-            font-size: 25px;
-            letter-spacing: 1px;
-            height: 45px;
             border-radius: 0px 10px 0px 10px;
             font-family: 'OpenSans-Regular';
+            letter-spacing: 1px;
+            font-size: 25px;
+            height: 45px;
+            width: 50%;
         }
     }
-
-    .skeleton {
-        background-color: var(--light-gray);
-        background-image: linear-gradient(100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%);
-        background-repeat: repeat-y;
-        background-size: 50px 100%;
-        animation: skeleton 1.5s infinite;
-        min-width: 100%;
-        min-height: 350px;
-    }
 }
 
-@keyframes skeleton {
-    to {
-        background-position: 120% 0;
-    }
-}
-
-@media #{$mobile} {
+@media #{$minmobile} {
     .banner-container {
+        height: 400px;
+
         &__title-container {
             &__subtitle {
                 font-size: 25px;
@@ -88,10 +62,102 @@
     }
 }
 
+@media #{$xsmobile} {
+    .banner-container {
+        height: 400px;
+
+        &__title-container {
+            &__subtitle {
+                font-size: 25px;
+            }
+
+            button {
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media #{$mobile} {
+    .banner-container {
+        height: 500px;
+
+        &__title-container {
+
+            &__img {
+                max-width: 600px;
+            }
+
+            &__subtitle {
+                font-size: 30px;
+            }
+
+            button {
+                height: 40px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media #{$xtablet} {
+    .banner-container {
+        height: 700px;
+
+        &__title-container {
+
+            &__img {
+                max-width: 700px;
+            }
+
+            &__subtitle {
+                font-size: 35px;
+                margin: 30px;
+            }
+
+            button {
+                height: 45px;
+                font-size: 30px;
+                width: 30%;
+            }
+        }
+    }
+}
+
 @media #{$pcfullhd} {
     .banner-container {
+        height: 800px;
+
         &__title-container {
-            margin-top: 10px;
+
+            &__img {
+                max-width: 800px;
+            }
+
+            &__subtitle {
+                font-size: 50px;
+                margin: 50px;
+            }
+
+            button {
+                height: 50px;
+                font-size: 35px;
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media #{$pcquadhd} {
+    .banner-container {
+        height: 900px;
+
+        &__title-container {
+
+            &__img {
+                max-width: 900px;
+            }
 
             &__subtitle {
                 font-size: 55px;
@@ -99,8 +165,9 @@
             }
 
             button {
-                width: 40%;
-                font-size: 35px;
+                height: 50px;
+                font-size: 40px;
+                width: 30%;
             }
         }
     }
