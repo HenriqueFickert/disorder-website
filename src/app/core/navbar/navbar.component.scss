@@ -1,3 +1,5 @@
+@import "../../scss/global.scss";
+
 .navbar {
     background-color: var(--black-light);
     justify-content: space-between;
@@ -25,5 +27,16 @@
 
     app-disorder-nav-logo {
         margin-left: 15px;
+    }
+}
+
+@media #{$pcfullhd} {
+    .navbar {
+        &__menu {
+            li {
+                margin: 10px;
+                font-size: 23px;
+            }
+        }
     }
 }
