@@ -4,7 +4,7 @@ import { BannerComponent } from './banner/banner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { TitleComponent } from './title/title.component';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { TitleComponent } from './title/title.component';
   imports: [
     CommonModule,
     MatProgressSpinnerModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ],
   exports: [
     BannerComponent,
