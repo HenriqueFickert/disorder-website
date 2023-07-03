@@ -48,6 +48,20 @@
     }
 }
 
+@media #{$mobile} {
+    .home-content {
+        &__container {
+            &__description-container {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
 @media #{$tablet} {
     .home-content {
         &__container {
@@ -62,7 +76,6 @@
                     margin: 0px 0px 0px 20px;
                     text-align: left;
                     width: 70%;
-                    font-size: 16px;
                 }
             }
         }
@@ -72,5 +85,19 @@
 @media #{$pcfullhd} {
     .home-content {
         margin: 20px 0px 35px 0px;
+
+        &__container {
+            &__description-container {
+
+                &__image {}
+
+                p {
+                    margin: 0px 0px 0px 30px;
+                    text-align: left;
+                    width: 70%;
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
