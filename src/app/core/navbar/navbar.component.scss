@@ -27,7 +27,17 @@
                 &:hover {
                     color: var(--primary);
                 }
+
+                // &.active-link {
+                //     color: var(--primary);
+                // }
             }
+        }
+
+        li a.active-link {
+            padding-bottom: 3px;
+            border-bottom: 1px dashed var(--primary);
+            ;
         }
     }
 
