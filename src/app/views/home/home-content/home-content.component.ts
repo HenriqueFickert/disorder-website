@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeContentComponent {
 
+  public title: string = "CREATING EMPATHY THROUGH GAMES";
+
 }

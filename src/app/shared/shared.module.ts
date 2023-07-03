@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { BannerComponent } from './banner/banner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
+import { TitleComponent } from './title/title.component';
 
 
 @NgModule({
   declarations: [
-    BannerComponent
+    BannerComponent,
+    TitleComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule
   ],
   exports: [
-    BannerComponent
+    BannerComponent,
+    TitleComponent
   ]
 })
 export class SharedModule { }

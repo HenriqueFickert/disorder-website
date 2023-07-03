@@ -1,71 +1,65 @@
 @import "../../../scss/global.scss";
 
-
 .home-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    width: 100%;
 
     &__container {
-        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 80%;
 
-        h1 {
-            margin: 30px;
-            font-family: "AmaticSC-Bold";
-            word-spacing: 1px;
-            letter-spacing: 2px;
-            text-align: center;
-            color: var(--black-light);
-            font-size: 55px;
+        app-title {
+            margin: 20px 0px 20px 0px;
         }
 
         &__description-container {
-            display: inline-flex;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+            display: flex;
+            width: 90%;
 
             &__image {
-                width: 100%;
-                height: 250px;
-                max-height: 1000px;
-                min-width: 350px;
                 background: url('../../../../assets/img/prints/print_nou.png');
-                background-position: bottom center;
+                background-position: bottom right;
                 background-repeat: no-repeat;
+                border-radius: 0px 20px 0px 20px;
                 background-size: cover;
-                border-radius: 20px 0 20px 0;
+                height: 250px;
+                width: 100%;
             }
 
             p {
-                margin: 30px;
                 font-family: "OpenSans-Regular";
-                letter-spacing: 1px;
                 color: var(--black-light);
-                font-size: 16px;
-            }
-        }
-
-    }
-}
-
-@media #{$tablet} {
-    .home-content {
-        &__container {
-            &__description-container {
-                flex-direction: unset;
-
-                &__image {}
-
-                p {}
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: 14px;
+                margin: 20px 0px 20px 0px;
             }
         }
     }
 }
+
+
+
+// @media #{$tablet} {
+//     .home-content {
+//         &__container {
+//             &__description-container {
+//                 flex-direction: unset;
+
+//                 &__image {}
+
+//                 p {}
+//             }
+//         }
+//     }
+// }

@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400px;
 
     &__title-container {
         backdrop-filter: brightness(60%);
@@ -21,7 +22,7 @@
 
         &__img {
             width: 80%;
-            max-width: 500px;
+            max-width: 350px;
         }
 
         &__subtitle {
@@ -30,7 +31,7 @@
             letter-spacing: 1px;
             text-align: center;
             font-weight: 100;
-            font-size: 35px;
+            font-size: 25px;
             margin: 30px;
         }
 
@@ -38,31 +39,16 @@
             border-radius: 0px 10px 0px 10px;
             font-family: 'OpenSans-Regular';
             letter-spacing: 1px;
-            font-size: 25px;
-            height: 45px;
+            font-size: 20px;
+            height: 30px;
             width: 50%;
         }
     }
 }
 
-@media #{$minmobile} {
-    .banner-container {
-        height: 400px;
 
-        &__title-container {
-            &__subtitle {
-                font-size: 25px;
-            }
 
-            button {
-                height: 30px;
-                font-size: 20px;
-            }
-        }
-    }
-}
-
-@media #{$xsmobile} {
+@media #{$smobile} {
     .banner-container {
         height: 400px;
 
@@ -73,7 +59,6 @@
 
             button {
                 height: 35px;
-                font-size: 20px;
             }
         }
     }
@@ -103,7 +88,7 @@
 
 @media #{$xtablet} {
     .banner-container {
-        height: 700px;
+        height: 600px;
 
         &__title-container {
 
@@ -132,7 +117,7 @@
         &__title-container {
 
             &__img {
-                max-width: 800px;
+                max-width: 900px;
             }
 
             &__subtitle {
@@ -141,7 +126,7 @@
             }
 
             button {
-                height: 45px;
+                height: 50px;
                 font-size: 35px;
                 width: 30%;
             }
@@ -156,7 +141,7 @@
         &__title-container {
 
             &__img {
-                max-width: 900px;
+                max-width: 1000px;
             }
 
             &__subtitle {
@@ -167,7 +152,7 @@
             button {
                 height: 50px;
                 font-size: 35px;
-                width: 30%;
+                width: 20%;
             }
         }
     }
