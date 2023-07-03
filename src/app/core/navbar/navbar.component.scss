@@ -15,14 +15,18 @@
 
         li {
             margin: 5px;
-            font-family: "AmaticSC-Bold";
-            letter-spacing: 1px;
-            font-size: 16px;
-            color: var(--white);
             cursor: pointer;
 
-            &:hover {
-                color: var(--primary);
+            a {
+                font-family: "AmaticSC-Bold";
+                letter-spacing: 1px;
+                font-size: 16px;
+                color: var(--white);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--primary);
+                }
             }
         }
     }

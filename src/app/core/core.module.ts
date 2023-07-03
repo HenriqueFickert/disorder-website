@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialMediaComponent } from './footer/social-media/social-media.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DisorderNavLogoComponent } from './navbar/disorder-nav-logo/disorder-nav-logo.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DisorderNavLogoComponent } from './navbar/disorder-nav-logo/disorder-na
   ],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,

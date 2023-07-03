@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './views/home/home.module';
+import { GameStoryModule } from './views/game-story/game-story.module';
+import { DownloadModule } from './views/download/download.module';
+import { TeamModule } from './views/team/team.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { HomeModule } from './views/home/home.module';
     AppRoutingModule,
     CoreModule,
     HomeModule,
+    GameStoryModule,
+    DownloadModule,
+    TeamModule,
     BrowserAnimationsModule
   ],
   providers: [],
