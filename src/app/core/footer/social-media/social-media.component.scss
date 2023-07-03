@@ -1,3 +1,5 @@
+@import "../../../scss/global.scss";
+
 .social-media-container {
     width: auto;
     display: inline;
@@ -12,6 +14,15 @@
 
         &:hover {
             fill: var(--gray);
+        }
+    }
+}
+
+@media #{$pcfullhd} {
+    .social-media-container {
+        a>svg {
+            fill: var(--white);
+            height: 30px;
         }
     }
 }

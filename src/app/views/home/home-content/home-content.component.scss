@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%;
 
     &__container {
@@ -60,10 +60,10 @@
     }
 }
 
-
-
 @media #{$tablet} {
     .home-content {
+        margin-bottom: 20px;
+
         &__container {
             &__description-container {
                 flex-direction: unset;
