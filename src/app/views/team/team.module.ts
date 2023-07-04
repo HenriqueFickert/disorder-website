@@ -8,7 +8,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { FumetsuContentComponent } from './fumetsu-content/fumetsu-content.component';
 import { MembersComponent } from './members/members.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
-
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { MemberCardComponent } from './members/member-card/member-card.component
   imports: [
     CommonModule,
     TeamRoutingModule,
-    SharedModule
+    SharedModule,
+    MatCardModule
   ]
 })
 export class TeamModule { }
