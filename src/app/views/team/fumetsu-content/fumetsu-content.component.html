@@ -1,18 +1,20 @@
 <div class="fumetsu-content">
     <div class="fumetsu-content__container">
-        <app-title [title]="title" [white]="white"></app-title>
-
-        <div class="fumetsu-content__container__tag display-none-web">
-            <p>FRIENDSHIP MAKES THE PROCESS EASY</p>
-        </div>
-
         <div class="fumetsu-content__container__description-container">
+            <!-- imagem -->
             <div class="fumetsu-content__container__description-container__image">
                 <div class="fumetsu-content__container__description-container__image__border"></div>
             </div>
 
-            <div class="fumetsu-content__container__description-container__text-content">
+            <!-- titulo-mobile -->
+            <app-title class="display-none-web" [title]="title" [white]="white"></app-title>
+            <div class="fumetsu-content__container__description-container__tag display-none-web">
+                <p>FRIENDSHIP MAKES THE PROCESS EASY</p>
+            </div>
 
+            <div class="fumetsu-content__container__description-container__text-content">
+                <!-- titulo-desktop -->
+                <app-title class="display-none-mobile" [title]="title" [white]="white"></app-title>
                 <div class="fumetsu-content__container__description-container__text-content__tag display-none-mobile">
                     <p>FRIENDSHIP MAKES THE PROCESS EASY</p>
                 </div>
