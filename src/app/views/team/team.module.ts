@@ -5,12 +5,14 @@ import { TeamRoutingModule } from './team-routing.module';
 import { TeamComponent } from './team.component';
 import { TeamBannerComponent } from './team-banner/team-banner.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FumetsuContentComponent } from './fumetsu-content/fumetsu-content.component';
 
 
 @NgModule({
   declarations: [
     TeamComponent,
-    TeamBannerComponent
+    TeamBannerComponent,
+    FumetsuContentComponent
   ],
   imports: [
     CommonModule,

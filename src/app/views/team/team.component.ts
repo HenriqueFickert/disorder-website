@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent {
-  public title: string = "FUMETSU";
-  public white: boolean = true;
+
 }
