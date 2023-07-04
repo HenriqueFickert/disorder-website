@@ -1,13 +1,12 @@
 @import "../../../scss/global.scss";
 
-.fumetsu-content {
+.fumetsu {
     clip-path: polygon(0 98%, 0 0, 100% 0, 100% 100%, 83% 99%, 69% 98%, 54% 98%, 41% 99%, 29% 99%, 13% 100%);
     background-color: var(--black-light);
     justify-content: center;
     flex-direction: column;
     align-items: center;
     display: flex;
-    height: auto;
     padding-bottom: 30px;
 
     img {
@@ -22,31 +21,30 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
         width: 80%;
 
-        app-title {
-            margin: 20px 0px 20px 0px;
-        }
-
-        &__description-container {
-            justify-content: center;
+        &__description {
             flex-direction: column;
             align-items: center;
             display: flex;
             width: 90%;
 
+            app-title {
+                margin: 10px;
+            }
+
             &__image {
                 background: url('../../../../assets/img/photos/foto_2.png');
                 background-position: center;
                 background-repeat: no-repeat;
-                border-radius: 0px 20px 0px 20px;
+                border-radius: 0 20px 0 20px;
                 background-size: cover;
                 height: 250px;
                 width: 100%;
-                margin-top: 30px;
 
                 &__border {
-                    border-radius: 0px 20px 0px 20px;
+                    border-radius: 0 20px 0 20px;
                     backdrop-filter: brightness(100%);
                     // backdrop-filter: grayscale(100%);
                     background-color: #3f3d9c35;
@@ -56,10 +54,9 @@
             }
 
             &__text-content {
-                margin: 10px 0px 0px 0px;
+                margin-top: 10px;
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
                 align-items: center;
 
                 p {
@@ -84,9 +81,7 @@
     background-color: var(--primary);
     padding: 3px;
     margin: 10px;
-    display: flex;
     justify-content: center;
-    align-items: center;
 
     p {
         text-align: center;
@@ -106,30 +101,21 @@
 }
 
 @media #{$mobile} {
-    .fumetsu-content {
-        &__container {
-            &__description-container {
-                &__text-content {
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
+    .fumetsu__container__description__text-content p {
+        font-size: 16px;
     }
 }
 
 @media #{$tablet} {
-    .fumetsu-content {
+    .fumetsu {
         &__container {
-
-            app-title {
-                margin: 20px 0px 0px 0px;
-            }
-
-
-            &__description-container {
+            &__description {
                 flex-direction: unset;
+
+                app-title {
+                    margin: 0;
+                }
+
 
                 &__image {
                     width: 30%;
@@ -138,7 +124,7 @@
 
                 &__text-content {
                     width: 70%;
-                    margin: 0px 0px 0px 30px;
+                    margin: 0 0 0 30px;
                 }
             }
         }
@@ -158,15 +144,9 @@
 }
 
 @media #{$pcfullhd} {
-    .fumetsu-content {
-        &__container {
-            &__description-container {
-                &__text-content {
-                    p {
-                        font-size: 18px;
-                    }
-                }
-            }
+    .fumetsu {
+        &__container__description__text-content p {
+            font-size: 18px;
         }
 
         img {
