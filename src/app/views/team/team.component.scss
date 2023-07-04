@@ -1,0 +1,11 @@
+.team-content {
+    width: 100%;
+
+    &__container {
+        clip-path: polygon(0 98%, 0 0, 100% 0, 100% 100%, 83% 99%, 69% 98%, 54% 98%, 41% 99%, 29% 99%, 13% 100%);
+        background-color: var(--gray);
+        height: 500px;
+
+        app-title {}
+    }
+}
