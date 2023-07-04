@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class TeamComponent {
   public title: string = "FUMETSU";
+  public white: boolean = true;
 }

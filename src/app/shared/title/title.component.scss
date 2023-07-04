@@ -5,8 +5,8 @@ h1 {
     word-spacing: 1px;
     letter-spacing: 2px;
     text-align: center;
-    color: var(--black-light);
     font-size: 40px;
+    padding: 0;
 }
 
 @media #{$smobile} {
@@ -37,4 +37,12 @@ h1 {
     h1 {
         font-size: 65px;
     }
+}
+
+.white-color {
+    color: var(--white);
+}
+
+.dark-color {
+    color: var(--black-light);
 }
