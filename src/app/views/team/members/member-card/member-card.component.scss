@@ -1,5 +1,6 @@
 .card {
     box-shadow: none;
+    width: 100%;
 
     &__header {
         &__image {
@@ -9,7 +10,7 @@
             border-radius: 0 20px 0 20px;
             background-size: cover;
             height: 250px;
-            width: 320px;
+            width: 265px;
 
             &__border {
                 border-radius: 0 20px 0 20px;
