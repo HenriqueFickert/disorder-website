@@ -48,10 +48,24 @@
     }
 }
 
-// @media #{$xsmobile} {
-//     .card {
-//         &__header {
-//             &__image {}
-//         }
-//     }
-// }
+@media #{$xsmobile} {
+    .card {
+        &__header {
+            &__image {
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+@media #{$smobile} {
+    .card {
+        max-width: 300px;
+
+        &__header {
+            &__image {
+                max-height: 400px;
+            }
+        }
+    }
+}
