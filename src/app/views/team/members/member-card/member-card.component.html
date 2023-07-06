@@ -1,22 +1,11 @@
 <mat-card class="card">
     <mat-card-header class="card__header">
-        <img mat-card-avatar class="card__header__image" src="../../../../../assets/img/photos/group/henrique.jpg" />
+        <img mat-card-avatar class="card__header__image" src="{{member.photo}}" alt="photo-{{member.name}}" />
     </mat-card-header>
 
     <mat-card-content class="card__content">
-        <mat-card-title>Henrique Franco Fickert</mat-card-title>
-        <mat-card-subtitle>Role: Game Programmer</mat-card-subtitle>
-        <p>
-            Henrique Franco Fickert Graziosi is a skilled game programmer and web developer, working as both a Game
-            Designer and Game Programmer at Fumetsu. With a deep passion for creating games, Henrique is dedicated to
-            crafting immersive and enjoyable experiences for players. Seeing people enjoy his games brings him immense
-            joy, and he is driven by his enthusiasm for game development. Besides being highly passionate about his
-            work, Henrique is known for his easygoing nature, making him a pleasant and collaborative team member.
-        </p>
-        <p>In addition to his professional endeavors, Henrique finds inspiration in playing games like League of
-            Legends, Ragnarok, and Grand Chase. These games not only provide entertainment but also fuel his creativity
-            and innovative thinking when it comes to his own game projects. Henrique's love for gaming and his
-            commitment to creating exceptional experiences make him a valuable asset in the industry, as he continuously
-            strives to bring joy to players around the world.</p>
+        <mat-card-title>{{member.name}}</mat-card-title>
+        <mat-card-subtitle>Role: {{member.role}}</mat-card-subtitle>
+        <p *ngFor="let description of member.descriptions">{{ description }}</p>
     </mat-card-content>
 </mat-card>
