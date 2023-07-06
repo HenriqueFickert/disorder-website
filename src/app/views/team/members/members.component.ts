@@ -60,9 +60,9 @@ export class MembersComponent {
       photo: "../../../../assets/img/photos/group/pedro.png",
       linkedin: "",
       github: "",
-      instagram: "",
+      instagram: "https://www.instagram.com/Pedrobiagi.3d",
       behance: "",
-      artstation: "",
+      artstation: "https://www.artstation.com/pedrobiagi",
       descriptions: ["Pedro Biagi brings with him extensive experience as a Concept Artist and 3D Modeler and Texture Artist. With his laid-back personality and beloved sense of humor, he easily connects with his colleagues, creating a pleasant work environment.", "In his free time, Pedro is dedicated to his hobbies of gaming, particularly enjoying games he can play with his friends, and immersing himself in the world of manga. His passion for games and manga serves as a constant source of inspiration for his creative work. With his diverse interests and technical skills, he is a valuable and well-rounded member of the Fumetsu team."]
     },
     {
@@ -88,6 +88,4 @@ export class MembersComponent {
       descriptions: ["Felipe Padial, Game Designer and Programmer, is a dedicated professional in his deliverables, always striving for impeccable work. His passion for digital games, board games, and anime serves as a source of inspiration to fuel his creations. Additionally, Felipe made significant contributions to the storyline of the game Disorder, showcasing his skills in various areas.", "The diversity of Felipe's interests and abilities makes him a valuable asset to the Fumetsu team. His attentiveness to friends and colleagues also makes him a very pleasant person to have on the team, always willing to help and create a collaborative environment."]
     }
   ];
-
-
 }
