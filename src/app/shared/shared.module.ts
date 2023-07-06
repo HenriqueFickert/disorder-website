@@ -5,11 +5,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { TitleComponent } from './title/title.component';
 import { RouterModule } from '@angular/router';
+import { FadeInComponent } from './fade-in/fade-in.component';
 
 @NgModule({
   declarations: [
     BannerComponent,
-    TitleComponent
+    TitleComponent,
+    FadeInComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     BannerComponent,
-    TitleComponent
+    TitleComponent,
+    FadeInComponent
   ]
 })
 export class SharedModule { }
