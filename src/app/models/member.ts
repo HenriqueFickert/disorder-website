@@ -7,5 +7,6 @@ export interface member {
     github: string
     instagram: string,
     behance: string,
-    artstation: string
+    artstation: string,
+    otherlink: string
 }
