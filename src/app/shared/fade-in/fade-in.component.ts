@@ -1,4 +1,4 @@
-import { Component, Input, HostListener, ElementRef, Renderer2 } from '@angular/core';
+import { Component, Input, HostListener, ElementRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -7,8 +7,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./fade-in.component.scss'],
   animations: [
     trigger('fadeIn', [
-      state('visible', style({ opacity: 1 })),
       state('hidden', style({ opacity: 0 })),
+      state('visible', style({ opacity: 1 })),
       transition('hidden => visible', animate('500ms ease-in')),
     ])
   ]
@@ -17,14 +17,14 @@ export class FadeInComponent {
   @Input() offset = 100;
   state = 'hidden';
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+  constructor(private elementRef: ElementRef) { }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     const componentPosition = this.elementRef.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset + window.innerHeight - this.offset;
+    const scrollPosition = window.scrollY;
 
-    if (scrollPosition > componentPosition) {
+    if (scrollPosition + window.innerHeight > componentPosition + this.offset) {
       this.state = 'visible';
     }
   }
