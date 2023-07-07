@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class StoryContentComponent {
   public title: string = "FUMETSU";
   public white: boolean = true;
+  public tag: string = "FRIENDSHIP MAKES THE PROCESS EASY";
 }
