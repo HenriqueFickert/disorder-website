@@ -1,0 +1,31 @@
+@import "../../../../scss/global.scss";
+
+a {
+    font-family: "AmaticSC-Bold";
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--primary);
+    }
+
+    &.active-link {
+        color: var(--primary);
+        padding-bottom: 3px;
+        border-bottom: 1px dashed var(--primary);
+    }
+}
+
+@media #{$smobile} {
+    a {
+        font-size: 18px;
+    }
+}
+
+@media #{$pcfullhd} {
+    a {
+        font-size: 23px;
+    }
+}

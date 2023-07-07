@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { member } from 'src/app/models/member';
+import { Member } from 'src/app/models/member';
 
 @Component({
   selector: 'app-members-content',
@@ -8,7 +8,7 @@ import { member } from 'src/app/models/member';
 })
 export class MembersContentComponent {
 
-  public members: member[] = [
+  public members: Member[] = [
     {
       name: "Henrique Franco Fickert Graziosi",
       role: "Game Programmer and Game Designer",

@@ -1,0 +1,24 @@
+@import "../../../scss/global.scss";
+
+.menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+
+    li {
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+@media #{$pcfullhd} {
+    .navbar {
+        &__menu {
+            li {
+                margin: 10px;
+            }
+        }
+    }
+}
