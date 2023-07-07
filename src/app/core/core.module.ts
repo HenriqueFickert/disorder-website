@@ -6,6 +6,7 @@ import { SocialMediaComponent } from './footer/social-media/social-media.compone
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DisorderNavLogoComponent } from './navbar/disorder-nav-logo/disorder-nav-logo.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     MatToolbarModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [
     FooterComponent,

@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { TeamRoutingModule } from './team-routing.module';
 import { TeamComponent } from './team.component';
-import { TeamBannerComponent } from './team-banner/team-banner.component';
+import { TeamBannerComponent } from './components/team-banner/team-banner.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { FumetsuContentComponent } from './fumetsu-content/fumetsu-content.component';
-import { MembersComponent } from './members/members.component';
-import { MemberCardComponent } from './members/member-card/member-card.component';
+import { FumetsuContentComponent } from './components/fumetsu-content/fumetsu-content.component';
+import { MembersContentComponent } from './components/members-content/members-content.component';
+import { MemberCardComponent } from './components/members-content/member-card/member-card.component';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { MatCardModule } from '@angular/material/card';
     TeamComponent,
     TeamBannerComponent,
     FumetsuContentComponent,
-    MembersComponent,
+    MembersContentComponent,
     MemberCardComponent
   ],
   imports: [

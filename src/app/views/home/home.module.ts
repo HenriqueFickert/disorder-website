@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { VideoContentComponent } from './video-content/video-content.component';
-import { HomeContentComponent } from './home-content/home-content.component';
+import { VideoContentComponent } from './components/video-content/video-content.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
 
 
 

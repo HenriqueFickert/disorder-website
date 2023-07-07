@@ -1,0 +1,95 @@
+@import "../../../../scss/global.scss";
+
+.video {
+    &__content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin-top: 30px;
+
+        &__container {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+
+            &__video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__description__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: auto;
+        margin: 15px;
+        max-width: 1000px;
+
+        p {
+            font-family: "AmaticSC-Bold";
+            word-spacing: 1px;
+            letter-spacing: 2px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--white);
+            font-size: 16px;
+        }
+    }
+}
+
+@media #{$smobile} {
+    .video {
+        &__description__container {
+            margin: 20px;
+
+            p {
+                line-height: 22px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media #{$mobile} {
+    .video {
+        &__description__container {
+            margin: 25px;
+
+            p {
+                line-height: 22px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media #{$xtablet} {
+    .video {
+        &__content {
+            width: 80%;
+        }
+
+        &__description__container {
+            p {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media #{$pcfullhd} {
+    .video {
+        padding: 45px;
+    }
+}

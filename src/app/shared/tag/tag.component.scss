@@ -1,0 +1,14 @@
+.tag {
+    background-color: var(--primary);
+    justify-content: center;
+    padding: 3px;
+    width: 100%;
+
+    p {
+        text-align: center;
+        font-family: "OpenSans-Bold";
+        color: var(--black-light);
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+}

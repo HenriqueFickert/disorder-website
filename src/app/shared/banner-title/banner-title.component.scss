@@ -1,0 +1,40 @@
+@import "../../scss/global.scss";
+
+h1 {
+    font-family: 'AmaticSC-Bold';
+    color: var(--primary);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 100px;
+    margin: 30px;
+}
+
+@media #{$xsmobile} {
+    h1 {
+        font-size: 110px;
+    }
+}
+
+@media #{$mobile} {
+    h1 {
+        font-size: 120px;
+    }
+}
+
+@media #{$xtablet} {
+    h1 {
+        font-size: 130px;
+    }
+}
+
+@media #{$pcfullhd} {
+    h1 {
+        font-size: 160px;
+    }
+}
+
+@media #{$pcquadhd} {
+    h1 {
+        font-size: 180px;
+    }
+}
