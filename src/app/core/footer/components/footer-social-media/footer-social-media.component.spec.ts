@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SocialMediaComponent } from './social-media.component';
+import { FooterSocialMedia } from './footer-social-media.component';
 
 describe('SocialMediaComponent', () => {
-  let component: SocialMediaComponent;
-  let fixture: ComponentFixture<SocialMediaComponent>;
+  let component: FooterSocialMedia;
+  let fixture: ComponentFixture<FooterSocialMedia>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SocialMediaComponent]
+      declarations: [FooterSocialMedia]
     });
-    fixture = TestBed.createComponent(SocialMediaComponent);
+    fixture = TestBed.createComponent(FooterSocialMedia);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
