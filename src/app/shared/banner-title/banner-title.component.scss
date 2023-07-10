@@ -8,16 +8,23 @@ h1 {
     color: var(--white);
     font-weight: 100;
     font-size: 50px;
-    margin: 0 15px;
-    // text-decoration: underline dashed 2px var(--primary);
-    // text-underline-offset: 0.2em;
 
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dashed var(--primary);
 
-    text-decoration: underline dashed 2px var(--primary);
-    text-decoration-color: var(--primary);
-    -webkit-text-decoration-color: var(--primary);
-    text-underline-offset: 0.2em;
+    ::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary);
+    }
 }
+
+
 
 @media #{$xsmobile} {
     h1 {
@@ -40,13 +47,11 @@ h1 {
 @media #{$pcfullhd} {
     h1 {
         font-size: 110px;
-        text-decoration: underline dashed 3px var(--primary);
     }
 }
 
 @media #{$pcquadhd} {
     h1 {
         font-size: 140px;
-        text-decoration: underline dashed 4px var(--primary);
     }
 }
