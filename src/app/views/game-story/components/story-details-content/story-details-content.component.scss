@@ -1,0 +1,127 @@
+@import "../../../../scss/global.scss";
+
+.story-details {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        &__content {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            width: 90%;
+
+            app-title {
+                margin: 20px 0;
+            }
+
+            &__container {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                width: 100%;
+
+                &__image {
+                    background: url('../../../../../assets/img/gifs/disorder-game.GIF');
+                    background-position: bottom center;
+                    background-repeat: no-repeat;
+                    border-radius: 0px 20px 0px 20px;
+                    background-size: cover;
+                    height: 250px;
+                    width: 100%;
+                }
+
+                &__text {
+                    width: 100%;
+                    margin: 20px 0;
+
+                    p {
+                        font-family: "OpenSans-Regular";
+                        color: var(--black-light);
+                        letter-spacing: 1px;
+                        text-align: justify;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+
+                    :last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.display-none-web {
+    display: flex;
+}
+
+.display-none-mobile {
+    display: none;
+}
+
+@media #{$mobile} {
+    .story-details__container__content__container {
+        &__image {
+            height: 380px;
+        }
+
+        &__text p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media #{$xtablet} {
+    .story-details__container__content__container__image {
+        height: 450px;
+    }
+}
+
+@media #{$tablet} {
+    .story-details__container__content__container {
+        flex-direction: unset;
+        margin: 20px 0;
+
+        &__image {
+            width: 45%;
+            height: 350px;
+        }
+
+        &__text {
+            width: 55%;
+            margin: 0 30px 0 0;
+        }
+    }
+
+    .display-none-web {
+        display: none;
+    }
+
+    .display-none-mobile {
+        display: flex;
+    }
+}
+
+@media #{$pcfullhd} {
+    .story-details__container__content__container {
+        &__image {
+            width: 30%;
+        }
+
+        &__text {
+            width: 70%;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

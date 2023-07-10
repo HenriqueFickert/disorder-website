@@ -6,13 +6,15 @@ import { GameStoryComponent } from './game-story.component';
 import { StoryContentComponent } from './components/story-content/story-content.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { GameStoryBannerComponent } from './components/game-story-banner/game-story-banner.component';
+import { StoryDetailsContentComponent } from './components/story-details-content/story-details-content.component';
 
 
 @NgModule({
   declarations: [
     GameStoryComponent,
     StoryContentComponent,
-    GameStoryBannerComponent
+    GameStoryBannerComponent,
+    StoryDetailsContentComponent
   ],
   imports: [
     CommonModule,
