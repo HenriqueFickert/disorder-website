@@ -10,7 +10,8 @@ h1 {
     font-size: 45px;
     margin: 0 15px 0 15px;
     text-decoration: underline dashed 2px var(--primary);
-    text-underline-offset: 0.2em;
+    // text-underline-offset: 0.2em;
+
 }
 
 @media #{$xsmobile} {
