@@ -2,39 +2,47 @@
 
 h1 {
     font-family: 'AmaticSC-Bold';
-    color: var(--primary);
-    letter-spacing: 1px;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 100px;
-    margin: 30px;
+    letter-spacing: 1px;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0 15px 0 15px;
+    text-decoration: underline dashed 2px var(--primary);
+    text-underline-offset: 7px
 }
 
 @media #{$xsmobile} {
     h1 {
-        font-size: 110px;
+        font-size: 45px;
     }
 }
 
 @media #{$mobile} {
     h1 {
-        font-size: 120px;
+        font-size: 55px;
     }
 }
 
 @media #{$xtablet} {
     h1 {
-        font-size: 130px;
+        font-size: 80px;
     }
 }
 
 @media #{$pcfullhd} {
     h1 {
-        font-size: 160px;
+        font-size: 100px;
+        text-underline-offset: 10px;
+        text-decoration: underline dashed 3px var(--primary);
     }
 }
 
 @media #{$pcquadhd} {
     h1 {
-        font-size: 180px;
+        font-size: 130px;
+        text-underline-offset: 15px;
+        text-decoration: underline dashed 4px var(--primary);
     }
 }

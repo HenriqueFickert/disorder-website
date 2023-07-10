@@ -1,7 +1,7 @@
 @import "../../../../scss/global.scss";
 
 .banner-container {
-    background-image: url("/assets/img/photos/group/grupo-anhembi.jpg");
+    background-image: url("/assets/img/photos/group/foto-normal1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,13 +14,16 @@
     &__title-container {
         backdrop-filter: brightness(60%);
         // background-color: #66124235;
-        // backdrop-filter: grayscale(100%);
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        app-banner-title {
+            padding-bottom: 10%;
+        }
     }
 }
 
