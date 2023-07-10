@@ -1,1 +1,122 @@
 @import "../../../../scss/global.scss";
+
+.game-story {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        width: 90%;
+
+        &__description {
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            width: 90%;
+
+            app-title {
+                margin: 10px;
+            }
+
+            &__image {
+                background: url('../../../../../assets/img/prints/print_axx.png');
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                border-radius: 0 20px 0 20px;
+                background-size: cover;
+                height: 250px;
+                width: 100%;
+
+                &__border {
+                    border-radius: 0 20px 0 20px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__text-content {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-family: "OpenSans-Regular";
+                    color: var(--white);
+                    letter-spacing: 1px;
+                    text-align: justify;
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+
+                :last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    app-tag {
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+}
+
+.display-none-web {
+    display: flex;
+}
+
+.display-none-mobile {
+    display: none;
+}
+
+@media #{$xsmobile} {
+    .game-story__container__description__image {
+        height: 400px;
+    }
+}
+
+@media #{$mobile} {
+    .game-story__container__description__text-content p {
+        font-size: 16px;
+    }
+}
+
+@media #{$tablet} {
+    .game-story {
+        &__container {
+            &__description {
+                flex-direction: unset;
+
+                app-title {
+                    margin: 0;
+                }
+
+                &__image {
+                    width: 30%;
+                    height: 570px;
+                }
+
+                &__text-content {
+                    width: 70%;
+                    margin: 0 0 0 30px;
+                }
+            }
+        }
+    }
+
+    .display-none-web {
+        display: none;
+    }
+
+    .display-none-mobile {
+        display: flex;
+    }
+}
+
+@media #{$pcfullhd} {
+    .game-story__container__description__text-content p {
+        font-size: 18px;
+    }
+}

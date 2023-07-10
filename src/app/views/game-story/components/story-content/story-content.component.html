@@ -1,2 +1,36 @@
-<app-dark-content class="fumetsu">
+<app-dark-content class="game-story">
+    <div class="game-story__container">
+        <div class="game-story__container__description">
+            <!-- imagem -->
+            <div class="game-story__container__description__image">
+                <div class="game-story__container__description__image__border"></div>
+            </div>
+
+            <!-- titulo-mobile -->
+            <app-title class="display-none-web" [title]="title" [white]="white"></app-title>
+            <app-tag [text]="tag" class="display-none-web"></app-tag>
+
+            <div class="game-story__container__description__text-content">
+                <!-- titulo-desktop -->
+                <app-title class="display-none-mobile" [title]="title" [white]="white"></app-title>
+
+                <app-tag [text]="tag" class="display-none-mobile"></app-tag>
+
+                <p>Iio is a young Uinco who is curious and empathetic. Starting from a routine problem, he begins his
+                    journey. However, the other inhabitants of his village warn him not to approach certain places where
+                    Uincos a little different from the rest live. These Uincos have disorders and characteristics that
+                    are not approved by society, resulting in their exclusion or isolation by "normal" citizens. Driven
+                    by his curiosity and compassion, Iio decides to cross these insensitive boundaries and interact with
+                    the marginalized Uincos, seeking to understand them and see the world from a different perspective.
+                </p>
+
+                <p>The invitation to explore these different points of view becomes overwhelmingly real when Iio is
+                    literally transported to the realities where these disorders govern their respective worlds. His
+                    goal now is to escape these alternative realities, which are inspired by the feelings and
+                    experiences of those who are excluded by society for being misunderstood. However, returning to his
+                    world will not be easy. Each world is controlled by a personification of the disorder itself,
+                    responsible for guiding and preventing Iio from progressing in the environment created by it.</p>
+            </div>
+        </div>
+    </div>
 </app-dark-content>

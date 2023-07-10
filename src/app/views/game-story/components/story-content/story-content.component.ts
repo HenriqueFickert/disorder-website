@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./story-content.component.scss']
 })
 export class StoryContentComponent {
-  public title: string = "FUMETSU";
+  public title: string = "GAME STORY";
   public white: boolean = true;
-  public tag: string = "FRIENDSHIP MAKES THE PROCESS EASY";
+  public tag: string = "FIND HOPE IN THE DEEP SEA OF MIND";
 }
