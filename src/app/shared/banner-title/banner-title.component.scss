@@ -7,42 +7,40 @@ h1 {
     letter-spacing: 1px;
     color: var(--white);
     font-weight: 100;
-    font-size: 40px;
+    font-size: 45px;
     margin: 0 15px 0 15px;
     text-decoration: underline dashed 2px var(--primary);
-    text-underline-offset: 7px
+    text-underline-offset: 0.2em;
 }
 
 @media #{$xsmobile} {
     h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 }
 
 @media #{$mobile} {
     h1 {
-        font-size: 55px;
+        font-size: 60px;
     }
 }
 
 @media #{$xtablet} {
     h1 {
-        font-size: 80px;
+        font-size: 85px;
     }
 }
 
 @media #{$pcfullhd} {
     h1 {
-        font-size: 100px;
-        text-underline-offset: 10px;
+        font-size: 105px;
         text-decoration: underline dashed 3px var(--primary);
     }
 }
 
 @media #{$pcquadhd} {
     h1 {
-        font-size: 130px;
-        text-underline-offset: 15px;
+        font-size: 135px;
         text-decoration: underline dashed 4px var(--primary);
     }
 }

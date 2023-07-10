@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./game-story-banner.component.scss']
 })
 export class GameStoryBannerComponent {
-  public title: string = "FIND HOPE IN THE DEEP SEA OF MIND"
+  public title: string = "MAKE THE DIFFERENCE";  // FIND HOPE IN THE DEEP SEA OF MIND
+
+
 }
