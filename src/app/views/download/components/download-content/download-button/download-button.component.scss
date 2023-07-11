@@ -1,0 +1,41 @@
+@import "../../../../../scss/global.scss";
+
+
+button {
+    border-radius: 0px 10px 0px 10px;
+    font-family: 'OpenSans-Bold';
+    letter-spacing: 1px;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    max-width: 570px;
+}
+
+@media #{$mobile} {
+    button {
+        font-size: 20px;
+        height: 35px;
+        max-width: 626px;
+    }
+}
+
+@media #{$tablet} {
+    button {
+        font-size: 25px;
+        height: 35px;
+    }
+}
+
+@media #{$pcfullhd} {
+    button {
+        font-size: 25px;
+        height: 40px;
+    }
+}
+
+@media #{$pcquadhd} {
+    button {
+        font-size: 30px;
+        height: 45px;
+    }
+}

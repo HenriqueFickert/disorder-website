@@ -1,0 +1,53 @@
+@import "../../../../../scss/global.scss";
+
+.download-instructions {
+    margin: 20px 0;
+    border: 1px dashed var(--primary);
+    border-radius: 10px;
+    max-width: 570px;
+
+    &__content {
+        margin: 20px;
+
+        h3 {
+            font-family: "OpenSans-Bold";
+            color: var(--white);
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            margin-left: 20px;
+
+            li {
+                font-family: "OpenSans-Regular";
+                color: var(--white);
+                letter-spacing: 1px;
+                text-align: left;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+@media #{$mobile} {
+    .download-instructions {
+        margin: 25px 0;
+        max-width: 628px;
+
+        &__content {
+            h3 {
+                font-size: 20px;
+            }
+
+            ol {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

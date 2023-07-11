@@ -8,13 +8,19 @@ import { DownloadContentComponent } from './components/download-content/download
 import { DownloadDetailsContentComponent } from './components/download-details-content/download-details-content.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatButtonModule } from '@angular/material/button';
+import { DownloadInstructionsComponent } from './components/download-content/download-instructions/download-instructions.component';
+import { DownloadButtonComponent } from './components/download-content/download-button/download-button.component';
+import { DownloadImageComponent } from './components/download-content/download-image/download-image.component';
 
 @NgModule({
   declarations: [
     DownloadComponent,
     DownloadBannerComponent,
     DownloadContentComponent,
-    DownloadDetailsContentComponent
+    DownloadDetailsContentComponent,
+    DownloadInstructionsComponent,
+    DownloadButtonComponent,
+    DownloadImageComponent
   ],
   imports: [
     CommonModule,

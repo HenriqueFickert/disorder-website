@@ -25,27 +25,14 @@
                     align-items: center;
                     display: flex;
 
-                    &__image {
-                        background: url('../../../../../assets/img/prints/print_fratura-mini.png');
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        border-radius: 0 20px 0 20px;
-                        background-size: cover;
-                        height: 250px;
+                    app-download-image {
                         width: 100%;
-                        margin-top: 20px;
-
-                        &__border {
-                            border-radius: 0 20px 0 20px;
-                            background-color: #3f3d9c35;
-                            width: 100%;
-                            height: 100%;
-                        }
                     }
 
                     &__description {
                         flex-direction: column;
                         align-items: center;
+                        justify-content: center;
                         display: flex;
 
                         app-tag {
@@ -61,47 +48,10 @@
                             font-size: 14px;
                         }
 
-                        button {
-                            border-radius: 0px 10px 0px 10px;
-                            font-family: 'OpenSans-Regular';
-                            letter-spacing: 1px;
-                            font-size: 20px;
-                            height: 30px;
+                        app-download-button {
+                            display: flex;
+                            justify-content: center;
                             width: 100%;
-                            max-width: 570px;
-                        }
-
-                        &__download-instructions {
-                            margin: 20px 0;
-                            border: 1px dashed var(--primary);
-                            border-radius: 10px;
-                            max-width: 570px;
-
-                            &__content {
-                                margin: 20px;
-
-                                h3 {
-                                    font-family: "OpenSans-Bold";
-                                    color: var(--white);
-                                    letter-spacing: 1px;
-                                    text-align: center;
-                                    font-size: 16px;
-                                    margin-bottom: 20px;
-                                }
-
-                                ol {
-                                    margin-left: 20px;
-
-                                    li {
-                                        font-family: "OpenSans-Regular";
-                                        color: var(--white);
-                                        letter-spacing: 1px;
-                                        text-align: left;
-                                        font-size: 14px;
-                                        margin-bottom: 8px;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -118,84 +68,33 @@
     display: none;
 }
 
-@media #{$smobile} {}
-
 @media #{$mobile} {
-    .download {
-        &__container {
-            &__content {
-                &__text-content {
-                    &__container {
-                        &__description {
-                            p {
-                                font-size: 16px;
-                            }
-
-                            button {
-                                font-size: 20px;
-                                height: 35px;
-                                max-width: 626px;
-                            }
-
-                            &__download-instructions {
-                                margin: 25px 0;
-                                max-width: 628px;
-
-                                &__content {
-                                    h3 {
-                                        font-size: 20px;
-                                    }
-
-                                    ol {
-                                        li {
-                                            font-size: 16px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .download__container__content__text-content__container__description p {
+        font-size: 16px;
     }
 }
 
+
 @media #{$tablet} {
-    .download {
-        &__container {
-            &__content {
-                &__text-content {
-                    &__container {
-                        flex-direction: unset;
-                        margin-top: 20px;
+    .download__container__content__text-content__container {
+        flex-direction: unset;
+        margin-top: 20px;
 
-                        &__image {
-                            margin-top: 0px;
-                            width: 30%;
-                            height: 590px;
-                        }
+        app-download-image {
+            width: 30%;
+        }
 
-                        &__description {
-                            margin-right: 25px;
-                            width: 70%;
+        &__description {
+            margin-right: 25px;
+            width: 70%;
 
-                            app-tag {
-                                width: 100%;
-                                margin: 0 0 20px 0;
-                            }
+            app-tag {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
 
-                            p {
-                                font-size: 16px;
-                            }
-
-                            button {
-                                font-size: 25px;
-                                height: 35px;
-                            }
-                        }
-                    }
-                }
+            p {
+                font-size: 16px;
             }
         }
     }
@@ -210,22 +109,7 @@
 }
 
 @media #{$pcfullhd} {
-    .download {
-        &__container {
-            &__content {
-                &__text-content {
-                    &__container {
-                        &__description {
-                            margin-right: 30px;
-
-                            button {
-                                font-size: 25px;
-                                height: 40px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .download__container__content__text-content__container__description {
+        margin-right: 30px;
     }
 }

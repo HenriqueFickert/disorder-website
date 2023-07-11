@@ -1,15 +1,12 @@
 <app-dark-content class="download">
     <div class="download__container">
         <div class="download__container__content">
-
             <div class="download__container__content__text-content">
                 <app-title [title]="title" [white]="white"></app-title>
 
                 <div class="download__container__content__text-content__container">
 
-                    <div class="download__container__content__text-content__container__image display-none-web">
-                        <div class="download__container__content__text-content__container__image__border"></div>
-                    </div>
+                    <app-download-image class="display-none-web"></app-download-image>
 
                     <div class="download__container__content__text-content__container__description">
                         <app-tag [text]="tag"></app-tag>
@@ -25,31 +22,11 @@
                             us!
                         </p>
 
-                        <div
-                            class="download__container__content__text-content__container__description__download-instructions">
-                            <div
-                                class="download__container__content__text-content__container__description__download-instructions__content">
-                                <h3>Download Instructions</h3>
-                                <ol>
-                                    <li>Click the button to initiate the download.</li>
-                                    <li>A new tab will open in Google Drive for the download to take place.</li>
-                                    <li>Confirm the download.</li>
-                                    <li>Wait for the file to be completely downloaded to your device.</li>
-                                    <li>Locate the downloaded file on your device.</li>
-                                    <li>Extract the .rar file.</li>
-                                    <li>Open the folder and run the Disorder.exe file.</li>
-                                    <li>Enjoy the thrilling experience of the Disorder Demo edition.</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <button mat-flat-button color="primary"
-                            onclick="window.open('https://drive.google.com/uc?export=download&id=1HHS4n239Z3jxqvQFgh2zWfNfFS9ku6v3', '_blank')">DOWNLOAD</button>
+                        <app-download-instructions></app-download-instructions>
+                        <app-download-button></app-download-button>
                     </div>
 
-                    <div class="download__container__content__text-content__container__image display-none-mobile">
-                        <div class="download__container__content__text-content__container__image__border"></div>
-                    </div>
+                    <app-download-image class="display-none-mobile"></app-download-image>
                 </div>
             </div>
         </div>
