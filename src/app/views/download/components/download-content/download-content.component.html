@@ -2,13 +2,15 @@
     <div class="download__container">
         <div class="download__container__content">
             <div class="download__container__content__text-content">
-                <app-title [title]="title" [white]="white"></app-title>
+                <app-title class="display-none-web" [title]="title" [white]="white"></app-title>
 
                 <div class="download__container__content__text-content__container">
 
                     <app-download-image class="display-none-web"></app-download-image>
 
                     <div class="download__container__content__text-content__container__description">
+                        <app-title class="display-none-mobile" [title]="title" [white]="white"></app-title>
+
                         <app-tag [text]="tag"></app-tag>
                         <p>We are thrilled to offer you the opportunity to experience a free sample of our game. The
                             Demo

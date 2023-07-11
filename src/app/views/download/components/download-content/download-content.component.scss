@@ -74,11 +74,9 @@
     }
 }
 
-
 @media #{$tablet} {
     .download__container__content__text-content__container {
         flex-direction: unset;
-        margin-top: 20px;
 
         app-download-image {
             width: 30%;
@@ -88,10 +86,6 @@
             margin-right: 25px;
             width: 70%;
 
-            app-tag {
-                width: 100%;
-                margin: 0 0 20px 0;
-            }
 
             p {
                 font-size: 16px;
