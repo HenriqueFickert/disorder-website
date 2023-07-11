@@ -1,9 +1,57 @@
 <app-dark-content class="download">
     <div class="download__container">
-        <app-title [title]="title" [white]="white"></app-title>
-        <app-tag [text]="tag"></app-tag>
-        <button mat-flat-button color="primary"
-            onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1HHS4n239Z3jxqvQFgh2zWfNfFS9ku6v3'">PLAY
-            NOW</button>
+        <div class="download__container__content">
+
+            <div class="download__container__content__text-content">
+                <app-title [title]="title" [white]="white"></app-title>
+
+                <div class="download__container__content__text-content__container">
+
+                    <div class="download__container__content__text-content__container__image display-none-web">
+                        <div class="download__container__content__text-content__container__image__border"></div>
+                    </div>
+
+                    <div class="download__container__content__text-content__container__description">
+                        <app-tag [text]="tag"></app-tag>
+                        <p>We are thrilled to offer you the opportunity to experience a free sample of our game. The
+                            Demo
+                            edition of Disorder is still under development, but it will allow you to dive into a dynamic
+                            and
+                            action-packed universe that we have created, giving you a taste of what's to come. We hope
+                            you
+                            have
+                            a lot of fun and enjoy this exciting preview. Oh, and don't forget to take good care of Ax
+                            for
+                            us!
+                        </p>
+
+                        <div
+                            class="download__container__content__text-content__container__description__download-instructions">
+                            <div
+                                class="download__container__content__text-content__container__description__download-instructions__content">
+                                <h3>Download Instructions</h3>
+                                <ol>
+                                    <li>Click the button to initiate the download.</li>
+                                    <li>A new tab will open in Google Drive for the download to take place.</li>
+                                    <li>Confirm the download.</li>
+                                    <li>Wait for the file to be completely downloaded to your device.</li>
+                                    <li>Locate the downloaded file on your device.</li>
+                                    <li>Extract the .rar file.</li>
+                                    <li>Open the folder and run the Disorder.exe file.</li>
+                                    <li>Enjoy the thrilling experience of the Disorder Demo edition.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <button mat-flat-button color="primary"
+                            onclick="window.open('https://drive.google.com/uc?export=download&id=1HHS4n239Z3jxqvQFgh2zWfNfFS9ku6v3', '_blank')">DOWNLOAD</button>
+                    </div>
+
+                    <div class="download__container__content__text-content__container__image display-none-mobile">
+                        <div class="download__container__content__text-content__container__image__border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </app-dark-content>

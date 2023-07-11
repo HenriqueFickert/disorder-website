@@ -1,3 +1,5 @@
+@import "../../scss/global.scss";
+
 .tag {
     background-color: var(--primary);
     justify-content: center;
@@ -11,5 +13,11 @@
         letter-spacing: 1px;
         font-size: 14px;
         text-transform: uppercase;
+    }
+}
+
+@media #{$mobile} {
+    .tag p {
+        font-size: 16px;
     }
 }
