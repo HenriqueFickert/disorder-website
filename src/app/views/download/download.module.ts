@@ -7,7 +7,7 @@ import { DownloadBannerComponent } from './components/download-banner/download-b
 import { DownloadContentComponent } from './components/download-content/download-content.component';
 import { DownloadDetailsContentComponent } from './components/download-details-content/download-details-content.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     DownloadRoutingModule,
-    SharedModule
+    SharedModule,
+    MatButtonModule
   ]
 })
 export class DownloadModule { }

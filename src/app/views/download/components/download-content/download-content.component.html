@@ -1,1 +1,7 @@
-<app-dark-content class="download"></app-dark-content>
+<app-dark-content class="download">
+    <div class="download__container">
+        <app-title [title]="title" [white]="white"></app-title>
+        <app-tag [text]="tag"></app-tag>
+        <button mat-flat-button color="primary" (click)="downloadFile()">PLAY NOW</button>
+    </div>
+</app-dark-content>
