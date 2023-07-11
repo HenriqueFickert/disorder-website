@@ -12,7 +12,7 @@ export class DownloadContentComponent {
 
 
   downloadFile() {
-    const fileUrl = '../../../assets/files/game/Disorder.rar';
+    const fileUrl = './assets/files/game/Disorder.rar';
 
     const link = document.createElement('a');
     link.href = fileUrl;
