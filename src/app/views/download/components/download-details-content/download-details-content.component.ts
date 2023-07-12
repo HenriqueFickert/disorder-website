@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./download-details-content.component.scss']
 })
 export class DownloadDetailsContentComponent {
-
+  public title: string = "Important notes";
 }

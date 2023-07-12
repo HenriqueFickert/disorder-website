@@ -1,0 +1,132 @@
+@import "../../../../scss/global.scss";
+
+.download {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 20px;
+
+        &__content {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            width: 90%;
+
+            &__description-container {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                width: 100%;
+                margin-top: 20px;
+
+                &__image {
+                    background: url('../../../../../assets/img/gifs/cropped-ax.gif');
+                    background-position: bottom center;
+                    background-repeat: no-repeat;
+                    border-radius: 0px 20px 0px 20px;
+                    background-size: cover;
+                    max-width: 650px;
+                    height: 200px;
+                    width: 100%;
+                }
+
+                &__notes {
+                    margin: 20px 0;
+
+                    h3 {
+                        font-family: "OpenSans-Bold";
+                        color: var(--black-light);
+                        text-align: left;
+                        font-size: 18px;
+                        margin: 30px 0 10px 0;
+                    }
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            font-family: "OpenSans-Regular";
+                            color: var(--black-light);
+                            letter-spacing: 1px;
+                            text-align: justify;
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .requirements {
+                            text-align: left;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$xsmobile} {
+    .download__container__content__description-container__image {
+        height: 220px;
+    }
+}
+
+@media #{$smobile} {
+    .download__container__content__description-container__image {
+        height: 260px;
+    }
+}
+
+@media #{$mobile} {
+    .download__container__content__description-container {
+        &__image {
+            height: 280px;
+        }
+
+        &__notes {
+            h3 {
+                font-size: 20px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .download__container__content__description-container {
+        flex-direction: unset;
+        margin-bottom: 20px;
+
+        &__image {
+            width: 40%;
+        }
+
+        &__notes {
+            width: 60%;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+@media #{$pcfullhd} {
+    .download__container__content__description-container {
+        &__notes {
+            margin: 0 0 0 30px;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            ul li {
+                font-size: 18px;
+            }
+        }
+    }
+}
