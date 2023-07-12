@@ -42,7 +42,7 @@ $disorder-website-theme: mat.define-light-theme((color: (primary: $disorder-webs
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: black transparent;
+  scrollbar-color: #e02490 #212121;
 
   &::-webkit-scrollbar {
     width: 6px;
