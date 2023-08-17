@@ -93,3 +93,12 @@ app-root {
 app-footer {
   margin-top: auto;
 }
+
+.fade-in-container {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in-container.visible {
+  opacity: 1;
+}

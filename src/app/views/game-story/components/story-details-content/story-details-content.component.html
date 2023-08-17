@@ -4,54 +4,50 @@
 
         <div class="story-details__container__content">
 
-            <app-fade-in>
-                <app-title [title]="title"></app-title>
-            </app-fade-in>
+            <app-title appFadein [title]="title"></app-title>
 
-            <app-fade-in>
-                <div class="story-details__container__content__container">
-                    <div class="story-details__container__content__container__image display-none-web">
-                        <div class="story-details__container__content__container__image__border"></div>
-                    </div>
-
-                    <div class="story-details__container__content__container__text">
-                        <p>
-                            In each world, a personification of the disorders takes control, tasked with guiding the
-                            player
-                            and
-                            hindering
-                            their progress through the created environment. These worlds are divided into specific
-                            stages,
-                            inspired
-                            by
-                            the
-                            most relevant feelings and symptoms of the chosen disorders, with the aim of allowing the
-                            player, in
-                            a
-                            lucid
-                            state, to experience the same sensations as individuals affected by those disorders.
-                        </p>
-                        <p>
-                            Within these worlds, there are fractures that manifest as bright ruptures, symbolizing the
-                            connection
-                            between
-                            the world controlled by the disorder and the liberated world. In the case of the character
-                            Iio,
-                            these
-                            fractures
-                            serve as checkpoints, enabling him to maintain control of the situation as they represent
-                            locations
-                            where
-                            the
-                            disorder has less power.
-                        </p>
-                    </div>
-
-                    <div class="story-details__container__content__container__image display-none-mobile">
-                        <div class="story-details__container__content__container__image__border"></div>
-                    </div>
+            <div appFadein class="story-details__container__content__container">
+                <div class="story-details__container__content__container__image display-none-web">
+                    <div class="story-details__container__content__container__image__border"></div>
                 </div>
-            </app-fade-in>
+
+                <div class="story-details__container__content__container__text">
+                    <p>
+                        In each world, a personification of the disorders takes control, tasked with guiding the
+                        player
+                        and
+                        hindering
+                        their progress through the created environment. These worlds are divided into specific
+                        stages,
+                        inspired
+                        by
+                        the
+                        most relevant feelings and symptoms of the chosen disorders, with the aim of allowing the
+                        player, in
+                        a
+                        lucid
+                        state, to experience the same sensations as individuals affected by those disorders.
+                    </p>
+                    <p>
+                        Within these worlds, there are fractures that manifest as bright ruptures, symbolizing the
+                        connection
+                        between
+                        the world controlled by the disorder and the liberated world. In the case of the character
+                        Iio,
+                        these
+                        fractures
+                        serve as checkpoints, enabling him to maintain control of the situation as they represent
+                        locations
+                        where
+                        the
+                        disorder has less power.
+                    </p>
+                </div>
+
+                <div class="story-details__container__content__container__image display-none-mobile">
+                    <div class="story-details__container__content__container__image__border"></div>
+                </div>
+            </div>
         </div>
     </div>
 </app-white-content>

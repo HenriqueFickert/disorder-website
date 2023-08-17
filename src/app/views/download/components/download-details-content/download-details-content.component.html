@@ -1,68 +1,65 @@
 <app-white-content class="download">
     <div class="download__container">
         <div class="download__container__content">
-            <app-fade-in>
-                <app-title [title]="title"></app-title>
-            </app-fade-in>
 
-            <app-fade-in>
-                <div class="download__container__content__description-container">
-                    <div class="download__container__content__description-container__image">
-                        <div class="download__container__content__description-container__image__border"></div>
-                    </div>
+            <app-title appFadein [title]="title"></app-title>
 
-                    <div class="download__container__content__description-container__notes">
-                        <h1>Details</h1>
+            <div appFadein class="download__container__content__description-container">
+                <div class="download__container__content__description-container__image">
+                    <div class="download__container__content__description-container__image__border"></div>
+                </div>
+
+                <div class="download__container__content__description-container__notes">
+                    <h1>Details</h1>
+
+                    <ul>
+                        <li>
+                            <strong>»</strong> The Disorder Demo edition is a limited test version of the full
+                            game and does not
+                            reflect
+                            all
+                            the
+                            features and content available in the final version.
+                        </li>
+                        <li>
+                            <strong>»</strong> The duration of the demo may vary depending on progress and
+                            gameplay style.
+                        </li>
+                        <li>
+                            <strong>»</strong> Please be aware that, as the game is still in development, issues
+                            and bugs may
+                            occur
+                            during
+                            gameplay.
+                        </li>
+                    </ul>
+
+                    <div appFadein>
+                        <h1>System Requirements</h1>
 
                         <ul>
-                            <li>
-                                <strong>»</strong> The Disorder Demo edition is a limited test version of the full
-                                game and does not
-                                reflect
-                                all
-                                the
-                                features and content available in the final version.
+                            <li class="requirements">
+                                <strong>Operating System:</strong> Windows 7 or higher.
                             </li>
-                            <li>
-                                <strong>»</strong> The duration of the demo may vary depending on progress and
-                                gameplay style.
+                            <li class="requirements">
+                                <strong>Processor:</strong> Intel Pentium E5200.
                             </li>
-                            <li>
-                                <strong>»</strong> Please be aware that, as the game is still in development, issues
-                                and bugs may
-                                occur
-                                during
-                                gameplay.
+                            <li class="requirements">
+                                <strong>Memory:</strong> 4 GB RAM.
+                            </li>
+                            <li class="requirements">
+                                <strong>Graphics Card:</strong> GeForce 9800GTX+ (1GB).
+                            </li>
+                            <li class="requirements">
+                                <strong>Storage:</strong> Requires 9 GB of free space.
+                            </li>
+                            <li class="requirements">
+                                <strong>Additional Notes:</strong> 1080p, 16:9 recommended.
                             </li>
                         </ul>
-
-                        <app-fade-in>
-                            <h1>System Requirements</h1>
-
-                            <ul>
-                                <li class="requirements">
-                                    <strong>Operating System:</strong> Windows 7 or higher.
-                                </li>
-                                <li class="requirements">
-                                    <strong>Processor:</strong> Intel Pentium E5200.
-                                </li>
-                                <li class="requirements">
-                                    <strong>Memory:</strong> 4 GB RAM.
-                                </li>
-                                <li class="requirements">
-                                    <strong>Graphics Card:</strong> GeForce 9800GTX+ (1GB).
-                                </li>
-                                <li class="requirements">
-                                    <strong>Storage:</strong> Requires 9 GB of free space.
-                                </li>
-                                <li class="requirements">
-                                    <strong>Additional Notes:</strong> 1080p, 16:9 recommended.
-                                </li>
-                            </ul>
-                        </app-fade-in>
                     </div>
                 </div>
-            </app-fade-in>
+            </div>
         </div>
     </div>
 </app-white-content>

@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { VideoContentComponent } from './components/video-content/video-content.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
+import { FadeinDirective } from 'src/app/directives/fadein.directive';
 
 
 

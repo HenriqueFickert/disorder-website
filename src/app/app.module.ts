@@ -8,6 +8,7 @@ import { HomeModule } from './views/home/home.module';
 import { GameStoryModule } from './views/game-story/game-story.module';
 import { DownloadModule } from './views/download/download.module';
 import { TeamModule } from './views/team/team.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TeamModule } from './views/team/team.module';
     GameStoryModule,
     DownloadModule,
     TeamModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
